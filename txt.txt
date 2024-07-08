@@ -1,0 +1,149 @@
+rt_nce1_mi3_bca
+1G = 3 lines
+10G = 13 lines
+100G = 0 lines
+
+rt_nce1_mi1_mia
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_ang_ftz
+1G = 5 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce2_ang_ftz
+1G = 6 lines
+10G = 1 lines
+100G = 0 lines
+
+rt_nce2_sp3_spa
+1G = 0 lines
+10G = 1 lines
+100G = 0 lines
+
+rt_nce1_sp3_spa
+1G = 2 lines
+10G = 0 lines
+100G = 0 lines 
+
+rt_nce1_itc_lis
+1G = 0 lines
+10G = 7 lines
+100G = 1 lines
+
+rt_nce2_itc_lis
+1G = 10 lines
+10G = 3 lines
+100G = 0 lines
+
+rt_nce1_inx_lond
+1G = 2 lines
+10G = 4 lines
+100G = 0 lines
+
+rt_nce1_mdl_lgs
+1G = 3 lines    
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_ter_cap
+1G = 6 lines
+10G = 1 lines
+100G = 0 lines
+
+rt_nce1_ter_jhb
+1G = 1 lines
+10G = 4 lines
+100G = 0 lines
+
+rt_nce1_ter_dur
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_sng_lad
+1G = 0 lines
+10G = 2 lines
+100G = 0 lines
+
+rt_nce3_sng_lad
+1G = 0 lines
+10G = 0 lines
+100G = 1 lines
+
+rt_nce2_sng_lad
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce4_sng_lad
+1G = 0 lines
+10G = 0 lines
+100G = 2 lines
+
+rt_nce1_ang_lad
+1G = 16 lines
+10G = 5 lines
+100G = 0 lines
+
+rt_nce2_ang_lad
+1G = 1 lines
+10G = 12 lines
+100G = 1 lines
+
+rt_nce1_rj2_rjo
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_drl_ny
+1G = 0 lines
+10G = 1 lines
+100G = 0 lines
+
+rt_nce1_sp4_spo
+1G = 0 lines
+10G = 1 lines
+100G = 0 lines
+
+rt_nce1_cs1_lax -------------------------------
+1G = 0 lines
+10G = 5 lines
+100G = 1 lines
+
+rt_nce1_raf_acc
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_sg1_sg
+1G = 0 lines
+10G = 16 lines
+100G = 0 lines
+
+rt_nce1_bsb_bsa -------------------------
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_tel_gna -------------------------
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_btp_cgb -------------------------
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce2_sp4_spo
+1G = 0 lines
+10G = 0 lines
+100G = 0 lines
+
+rt_nce1_ld8_lon
+1G = 0 lines    
+10G = 0 lines
+100G = 0 lines
