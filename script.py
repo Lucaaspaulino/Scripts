@@ -8,9 +8,9 @@ import re
 import time
 
 # Credenciais de acesso
-GUACAMOLE_HOST = '102.130.68.190'
-GUACAMOLE_USER = 'frederico.oliveira'
-GUACAMOLE_PASSWORD = '239507/Astr23'
+HOST = "you_host"
+USER = "you_user"
+PASSWORD = "you_password"
 
 # Função para se conectar ao servidor Guacamole e executar um comando
 def connect_and_execute_command(host, user, password, command):
@@ -38,9 +38,9 @@ def collect_server_data(servers):
     for hostname in servers:
         try:
             session = requests.Session()
-            gateway_session = SSHSession(GUACAMOLE_HOST, GUACAMOLE_USER, password=GUACAMOLE_PASSWORD).open()
-            remote_session = gateway_session.get_remote_session(str(hostname), GUACAMOLE_USER, password=GUACAMOLE_PASSWORD)
-            
+            gateway_session = SSHSession(HOST, USER, password=PASSWORD).open()
+            remote_session = gateway_session.get_remote_session(str(hostname), USER, password=PASSWORD)
+            # Comandos em router juniper
             port_1gb_cmd = 'show interfaces descriptions | match ge-| match FREE | count'
             port_10gb_cmd = 'show interfaces descriptions | match xe-| match FREE | count'
             port_100gb_cmd = 'show interfaces descriptions | match et-| match FREE | count'
@@ -74,6 +74,7 @@ def print_server_data(hostname, port_1gb, port_10gb, port_100gb):
     print('############################################')
 
 # Função para coletar informações de portas dos dispositivos usando netmiko
+# Automação em roteadores Nokia, so funciona com Netmiko
 def collect_device_data(devices):
     data = []
     for device in devices:
@@ -119,11 +120,12 @@ def collect_device_data(devices):
 
 # Função principal
 def main():
-    # Comando a ser executado no servidor Guacamole
-    guacamole_command = 'cat /etc/hosts | grep rt'
+    # Comando a ser executado no servidor
+    # Esse comando é pra quando você tiver varios routers dentro do servidor.
+    command = 'cat /etc/hosts | grep rt'
     
     # Conectando ao servidor Guacamole e obtendo os nomes dos servidores
-    output = connect_and_execute_command(GUACAMOLE_HOST, GUACAMOLE_USER, GUACAMOLE_PASSWORD, guacamole_command)
+    output = connect_and_execute_command(HOST, USER, PASSWORD, command)
     servers = extract_server_names(output)
     
     # Coletando dados dos servidores
@@ -133,28 +135,28 @@ def main():
     devices = [
         {
             'device_type': 'nokia_sros',
-            'host': 'trt_nce1_bsb_bsa',
-            'ip': '170.238.232.6',
-            'username': GUACAMOLE_USER,
-            'password': GUACAMOLE_PASSWORD,
+            'host': 'you_router',
+            'ip': 'you_ip',
+            'username': USER,
+            'password': PASSWORD,
             'port': 22,
             'verbose': True
         },
         {
             'device_type': 'nokia_sros',
-            'host': 'trt_nce1_btp_cgb',
-            'ip': '170.238.232.196',
-            'username': GUACAMOLE_USER,
-            'password': GUACAMOLE_PASSWORD,
+            'host': 'you_router',
+            'ip': 'you_ip',
+            'username': USER,
+            'password': PASSWORD,
             'port': 22,
             'verbose': True
         },
         {
             'device_type': 'nokia_sros',
-            'host': 'trt_nce1_tel_gna',
-            'ip': '170.238.232.7',
-            'username': GUACAMOLE_USER,
-            'password': GUACAMOLE_PASSWORD,
+            'host': 'you_router',
+            'ip': 'you_ip',
+            'username': USER,
+            'password': PASSWORD,
             'port': 22,
             'verbose': True
         }
